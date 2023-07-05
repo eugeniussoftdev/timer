@@ -16,3 +16,5 @@ export const WorldTime = () => {
     </WordTimeBLock>
   );
 };
+
+export default WorldTime;

@@ -1,14 +1,15 @@
-import React, { useReducer, useRef, useState } from "react";
+import React, { useReducer, useRef, useState, Suspense, lazy } from "react";
 import styled from "styled-components";
 
 import { reducer } from "./Timer.reducer";
 import { Menu } from "../menu/Menu.component";
 import { TimeList } from "../timeList/TimeList.component";
-import { WorldTime } from "../worldTime/WorldTime.component";
 
 import { formatTime } from "../../utils";
 
 import { reducerActions } from "./Timer.types";
+
+const WorldClock = lazy(() => import("../worldTime/WorldTime.component"));
 
 export const TimerWrapper = styled.div`
   display: flex;
@@ -149,7 +150,9 @@ export const Timer = () => {
 
   return (
     <>
-      <WorldTime />
+      <Suspense fallback={"Loading.."}>
+        <WorldClock />
+      </Suspense>
       <TimerWrapper>
         <Menu />
         <TimerControls>
