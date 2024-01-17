@@ -19,10 +19,7 @@ const Hero = () => {
                 </h1>
                 <Timer />
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  This is a new cool timer!
                 </p>
               </div>
             </div>
