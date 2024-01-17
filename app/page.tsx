@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
+import { Table } from "@/components/Table";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <AboutSectionOne /> */}
       {/* <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
+      <Table />
       <Pricing />
       {/* <Blog /> */}
       {/* <Contact /> */}

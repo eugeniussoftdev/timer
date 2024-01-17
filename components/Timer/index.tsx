@@ -14,7 +14,7 @@ const defaultWorkItem = {
   tag: "work",
   category: "work",
   startTime: new Date(),
-  entTime: new Date(),
+  endTime: new Date(),
   totalTime: 0,
 };
 
@@ -51,7 +51,7 @@ export const Timer = () => {
     addDbDoc({
       ...workItem,
       title: workName,
-      entTime: new Date(),
+      endTime: new Date(),
       totalTime: time,
     });
     setTimer(0);
